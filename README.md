@@ -12,7 +12,7 @@ Running the script saves a sample GIF in the current working directory.
 - extractEvoked: Converts an MNE EpochsArray structure to an Evoked structure.
 
 #### Example output 
-![](https://raw.githubusercontent.com/gretatuckute/Brainmation/Brainmation_example.gif/)
+![](Brainmation_example.gif)
 
 Example of a sensitivity map computed based on a SVM classifier separating animate/inanimate visual stimuli. The EEG signal was bandpass filtered to 1-25 Hz and downsampled to 100 Hz. Epochs of 600 ms (100 ms pre and 500 ms post stimulus onset) were extracted.
 
