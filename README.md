@@ -37,3 +37,5 @@ The implementation is based on:
 
 - [ImageMagick](http://www.imagemagick.org/)
 
+*Cognitive Systems, Department of Applied Mathematics and Computer Science, Technical University of Denmark* 
+
