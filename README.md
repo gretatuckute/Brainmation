@@ -1,24 +1,15 @@
-# NeuralGIF
-Code for creating GIFs in Python based on neural time series data.
+# Animated brains, *Brainmation*
+Toolbox for creating GIFs in Python based on neural time series data using [MNE](https://mne-tools.github.io/stable/index.html) and [Matplotlib](https://matplotlib.org/).
 
 ### Script information 
+The script, *makeBrainmation.py*, loads sample EEG data, preprocesses EEG data epoch-wise and generates a topomap animation.
+Running the script saves a sample GIF in the current working directory.
 
-c
-
-The script, *computeSensitivityMap.py* fits a SVM classifier based on the input data matrix and label array, and computes the corresponding sensitivity map. 
-
-#### Inputs 
-- X: EEG data 2d matrix containing trials as rows, and features (channels * time points) as columns.
-- y: List/NumPy array containing binary class labels, y = {-1, 1}.
-- C: SVM classifier regularization parameter. 
-- Gamma: Free parameter of the RBF kernel, SVM classifier.
-
-#### Outputs
-- s_matrix: sensitivity map matrix.
-- plt: Visualization of the sensitivity map.
-
-#### Example function call
-computeSensitivityMap(X, y, C_val = 1, gamma_val = 0.0005, no_channels = 32, no_timepoints = 60)
+#### Functions within *makeBrainmation.py*
+- createInfo: Creates an MNE info data structure.
+- preprocEpoch: Preprocesses epoched (M)EEG data (in collaboration with [Sofie Therese Hansen](https://github.com/STherese)).
+- createEpochsArray: Creates an MNE EpochsArray from a NumPy array containing (M)EEG data. Possibility of adding events/categories associated with individual trials.
+- extractEvoked: Converts an MNE EpochsArray structure to an Evoked structure.
 
 #### Example output 
 ![alt text](https://raw.githubusercontent.com/gretatuckute/DecodingSensitivityMapping/master/Example/sensitivity_map.png)
@@ -27,9 +18,11 @@ Example of a sensitivity map computed based on a SVM classifier separating anima
 
 #### Acknowledgements
 
-The implementation is based on the projects:
+The implementation is based on:
 
-- TensorFlow implementation of VGG-19 'neural-style-tf' by [cysmith](https://github.com/cysmith/neural-style-tf).
+- [MNE (MEG + EEG data analysis & visualization)](https://mne-tools.github.io/stable/index.html)
 
-- Brain surface reconstruction is made with [Freesurfer 6.0.0](https://surfer.nmr.mgh.harvard.edu/) and processed in [MeshLab](http://www.meshlab.net/). 
+- [Matplotlib](https://matplotlib.org/). 
+
+- 
 
