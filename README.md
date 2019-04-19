@@ -6,9 +6,8 @@ The script, *makeBrainmation.py*, loads sample EEG data, preprocesses EEG data e
 Running the script saves a sample GIF in the current working directory.
 
 #### Dependencies
-- [MNE](https://mne-tools.github.io/stable/index.html) needs to be installed in the current Python environment for M(EEG) analysis.
-- [ImageMagick](http://www.imagemagick.org/) needs to be installed for saving GIF files.
-
+- [MNE](https://mne-tools.github.io/stable/index.html) for M(EEG) analysis.
+- [ImageMagick](http://www.imagemagick.org/) for saving GIF files.
 
 #### Functions within *makeBrainmation.py*
 - createInfo: Creates an MNE info data structure.
