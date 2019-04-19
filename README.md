@@ -12,8 +12,7 @@ Running the script saves a sample GIF in the current working directory.
 #### Functions within *makeBrainmation.py*
 - createInfo: Creates an MNE info data structure.
 - preprocEpoch: Preprocesses epoched (M)EEG data (in collaboration with [Sofie Therese Hansen](https://github.com/STherese)).
-- createEpochsArray: Creates an MNE EpochsArray from a NumPy array containing (M)EEG data. Possibility of adding events/categories associated with individual trials.
-- extractEvoked: Converts an MNE EpochsArray structure to an MNE Evoked structure.
+- createEvoked: Creates an MNE Evoked structure from a NumPy array containing (M)EEG data. Possibility of adding events/categories associated with individual trials.
 
 #### Files in the repository (sample data)
 - EEG.npy: NumPy array containing 40 EEG epochs recorded with [Enobio 32](https://www.neuroelectrics.com/products/enobio/) with a sampling frequency of 500 Hz. Length of epochs is 900 ms (100 ms pre and 800 ms post stimulus onset).
