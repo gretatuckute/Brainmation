@@ -16,7 +16,7 @@ Running the script saves a sample GIF in the current working directory.
 - extractEvoked: Converts an MNE EpochsArray structure to an MNE Evoked structure.
 
 #### Files in the repository (sample data)
-- EEG.npy: NumPy array containing 40 EEG epochs recorded with [Enobio 32](https://www.neuroelectrics.com/products/enobio/). Epochs of 900 ms (100 ms pre and 800 ms post stimulus onset).
+- EEG.npy: NumPy array containing 40 EEG epochs recorded with [Enobio 32](https://www.neuroelectrics.com/products/enobio/) with a sampling frequency of 500 Hz. Length of epochs is 900 ms (100 ms pre and 800 ms post stimulus onset).
 - y.npy: NumPy array containing conditions for EEG epochs. 0 corresponds to a visual 'scene' stimuli, and 1 corresponds to a visual 'face' stimuli. Optional whether to use conditions for animations.
 
 #### Example output 
