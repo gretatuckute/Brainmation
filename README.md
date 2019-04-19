@@ -1,5 +1,5 @@
-# Animated brains, *Brainmation*
-Toolbox for creating GIFs in Python based on neural time series data using [MNE](https://mne-tools.github.io/stable/index.html) and [Matplotlib](https://matplotlib.org/).
+# Animated brains
+Toolbox for creating GIFs in Python based on neural time series data.
 
 ### Script information 
 The script, *makeBrainmation.py*, loads sample EEG data, preprocesses EEG data epoch-wise and generates a topomap animation.
