@@ -7,6 +7,7 @@ Running the script saves a sample GIF in the current working directory.
 
 #### Dependencies
 - [MNE](https://mne-tools.github.io/stable/index.html) for M(EEG) analysis.
+- [Matplotlib](https://matplotlib.org/) for plotting animations.
 - [ImageMagick](http://www.imagemagick.org/) for saving GIF files.
 
 #### Functions within *makeBrainmation.py*
